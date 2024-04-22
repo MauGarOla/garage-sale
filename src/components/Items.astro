@@ -1,0 +1,61 @@
+---
+import Item from './Item.astro'
+---
+<div class="items">
+    <Item
+        title="Comedor",
+        description="Comedor Colonial usado, madera noble, 8 personas, 211cms x 107cms, 8 Sillas, 2 con apoyabrazos y 6 sin apoyabrazos. Buenas condiciones. Sillas requieren tapicería.",
+        price={7000},
+        sold={true},
+    />
+    <Item
+        title="Vitrina",
+        description="Vitrina y trastero completo usado, Colonial, madera noble, ancho 191cms x 200 cms. x 40cms.",
+        price={4000},
+        sold={false},
+    />
+    <Item
+        title="Mesas",
+        description="Mesa centro de sala y mesa lateral, usadas, colonial, madera noble, Mesa sala grande de 104 x 52 cms y lateral de 51 x 51 Cms.",
+        price={1000},
+        sold={false},
+    />
+    <Item
+        title="Sala",
+        description="Sala usada de Love seat y sillón, con acabados en madera. Sillón 2.14 Cms. y love seat 1.50 cms. Tela requiere limpieza.",
+        price={4500},
+        sold={false},
+    />
+    <Item
+        title="Andadera",
+        description="Andadera usada para adulto, ajustable. Buenas condiciones",
+        price={550},
+        sold={false},
+    />
+    <Item
+        title="Reclinable",
+        description="Excelente sillón reclinable usado con cabecera. Buenas condiciones",
+        price={900},
+        sold={false},
+    />
+    <Item
+        title="Singer",
+        description="Máquina Clásica de coser Juego de ruedas para Singer sewing Cat.No.Ba138",
+        price={1550},
+        sold={false},
+    />
+    <Item
+        title="Costurero",
+        description="Costurero de madera con cajones y gabinetes, de 34cms x 47cms x 62cms de alto",
+        price={650},
+        sold={false},
+    />
+</div>
+<style>
+    .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    grid-auto-rows: 420px;
+	}
+</style>
