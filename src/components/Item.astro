@@ -1,9 +1,10 @@
 ---
 const { title, description, price, sold } = Astro.props;
+import f from '../../public/Andadera.png'
 ---
 
 <div class="item">
-	<img src={'../images/Andadera.png'} alt="Item."/>
+	<img src=`../../public/${title}.png` alt="Item."/>
 	<div class="text">
 		<h2>{title}</h2>
 		<p class="price">${price} pesos</p>
